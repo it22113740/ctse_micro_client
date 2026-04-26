@@ -233,14 +233,13 @@ export default function SignupPage() {
 
                 {/* Image Upload */}
                 <div>
-                  <label className="text-xs font-bold text-white/70 block mb-1.5">🖼️ Profile Picture</label>
+                  <label className="text-xs font-bold text-white/70 block mb-1.5">🖼️ Profile Picture <span className="text-white/40 font-normal">(optional)</span></label>
                   <div className="relative">
                     <input
                       type="file"
                       name="image"
                       accept="image/*"
                       onChange={handleChange}
-                      required
                       className="w-full rounded-lg border border-white/15 bg-white/6 px-3 py-2.5 text-xs text-white placeholder:text-white/30 focus:border-[#4a9fd8] focus:bg-white/10 focus:outline-none focus:ring-1 focus:ring-[#206eaa]/40 transition-all cursor-pointer file:cursor-pointer file:border-0 file:bg-[#206eaa]/30 file:text-white file:text-xs file:font-bold file:mr-2 file:px-2 file:py-1 file:rounded"
                     />
                   </div>
